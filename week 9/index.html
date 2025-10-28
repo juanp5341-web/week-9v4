@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autumn Reverie — Color Harmony</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Hero ===== -->
+  <header class="hero" role="banner" aria-label="Autumn Reverie hero">
+    <div class="hero__content container">
+      <h1 class="hero__title">Autumn Reverie</h1>
+      <p class="hero__tag">Warm light, crisp air, calm focus.</p>
+      <a class="btn" href="#palette">See the Palette</a>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main id="main" class="main" role="main">
+    <!-- Gradient Section -->
+    <section id="palette" class="section section--gradient reveal" aria-labelledby="palette-title">
+      <div class="container">
+        <h2 id="palette-title">Harvest Harmony</h2>
+        <p class="lead">
+          A cozy <strong>analogous</strong> palette blends <strong>maple</strong> to <strong>amber</strong> to <strong>rust</strong>.
+          Gradients carry heat across the page while staying gentle on the eyes.
+        </p>
+        <ul class="swatches" role="list" aria-label="Color swatches">
+          <li aria-label="Maple #C5542B"></li>
+          <li aria-label="Amber #D98A2B"></li>
+          <li aria-label="Rust #8E3A22"></li>
+          <li aria-label="Moss #2F4F3A"></li>
+          <li aria-label="Cream #F6F1E9"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Solid Section -->
+    <section class="section section--solid reveal" aria-labelledby="craft-title">
+      <div class="container">
+        <h2 id="craft-title">Design That Gathers</h2>
+        <p class="lead">
+          Solid backgrounds create rest between moments of color. Pairing <em>cream</em> with
+          a deep <em>moss</em> accent keeps type crisp and accessible. Use rhythm:
+          dense header → airy body → small accents to guide the eye.
+        </p>
+
+        <!-- Inline SVG Pumpkin -->
+        <div class="stamp" aria-label="Made for Fall badge">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="44" height="44" aria-hidden="true">
+            <defs>
+              <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#F2A14A"/>
+                <stop offset="1" stop-color="#C5542B"/>
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="#7A2E16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M32 16 c-2 -6 4 -10 8 -8"/>
+              <ellipse cx="32" cy="36" rx="18" ry="14" fill="url(#body)"/>
+              <path d="M24 22 c-8 2 -14 10 -14 16 s6 14 14 16" fill="url(#body)"/>
+              <path d="M40 22 c8 2 14 10 14 16 s-6 14 -14 16" fill="url(#body)"/>
+              <path d="M32 22 v28" />
+              <path d="M26 23 v26" />
+              <path d="M38 23 v26" />
+              <path d="M32 16 c2 -6 8 -6 10 -2" />
+              <path d="M42 14 c4 2 6 6 2 8" />
+              <path d="M30 14 c-4 2 -6 6 -2 8" />
+              <path d="M32 16 l2 6" />
+              <path d="M30 16 l-2 6" />
+              <path d="M26 52 h12" />
+            </g>
+          </svg>
+          <span>Made for Fall</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Autumn Reverie — Color Harmony Landing Page.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
